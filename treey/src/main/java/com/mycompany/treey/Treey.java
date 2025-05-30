@@ -35,28 +35,4 @@ public class Treey {
     public static void printDescending(BinaryTree tree) {
        preorder(tree.root);
     }
-
-    public static void preorder(Node root) {
-        if (root != null) {
-            System.out.print(root.value);
-            preorder(root.left);
-            preorder(root.right);
-        }
-    }
-    
-    public static void inorderRec(Node root) {
-        if (root != null) {
-            inorderRec(root.left);
-            System.out.print(root.value);
-            inorderRec(root.right);
-        } 
-    }
-    
-    public static void postorderRec(Node root) {
-        if (root != null) {
-            postorderRec(root.left);
-            postorderRec(root.right);
-            System.out.print(root.value);
-        }
-    }
 }
